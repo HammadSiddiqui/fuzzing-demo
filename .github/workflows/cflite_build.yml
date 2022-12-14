@@ -14,7 +14,7 @@ jobs:
      fail-fast: false
      matrix:
         sanitizer:
-        - address
+        - coverage
         # Override this with the sanitizers you want.
         # - undefined
         # - memory
@@ -26,3 +26,4 @@ jobs:
         language: c++ # Change this to the language you are fuzzing.
         sanitizer: ${{ matrix.sanitizer }}
         upload-build: true
+        fuzz-seconds: 150
