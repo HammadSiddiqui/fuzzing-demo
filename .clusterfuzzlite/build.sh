@@ -10,7 +10,7 @@
 # e.g.
 $CXX $CXXFLAGS -std=c++11 -Iinclude \
     ./fuzzer.cpp -o $OUT/fuzzer \
-    $LIB_FUZZING_ENGINE ./fuzzer.a
+    $LIB_FUZZING_ENGINE 
 
 
 #clang++ ./fuzzy.cpp -std=c++14 -g -fsanitize=fuzzer,address 
