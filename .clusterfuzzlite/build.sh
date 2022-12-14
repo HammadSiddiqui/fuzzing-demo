@@ -8,6 +8,9 @@
 
 # build fuzzers
 # e.g.
-# $CXX $CXXFLAGS -std=c++11 -Iinclude \
-#     /path/to/name_of_fuzzer.cc -o $OUT/name_of_fuzzer \
-#     $LIB_FUZZING_ENGINE /path/to/library.a
+$CXX $CXXFLAGS -std=c++11 -Iinclude \
+    ./fuzzer.cpp -o $OUT/fuzzer \
+    $LIB_FUZZING_ENGINE ./fuzzer.a
+
+
+#clang++ ./fuzzy.cpp -std=c++14 -g -fsanitize=fuzzer,address 
