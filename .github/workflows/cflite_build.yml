@@ -14,7 +14,7 @@ jobs:
      fail-fast: false
      matrix:
         sanitizer:
-        - coverage
+        - memory
         # Override this with the sanitizers you want.
         # - undefined
         # - memory
