@@ -2,7 +2,7 @@ name: ClusterFuzzLite continuous builds
 on:
   push:
     branches:
-      - main  # Use your actual default branch here.
+      - master  # Use your actual default branch here.
 permissions: read-all
 jobs:
   Build:
