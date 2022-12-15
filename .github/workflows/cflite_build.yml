@@ -23,6 +23,6 @@ jobs:
      id: build
      uses: google/clusterfuzzlite/actions/build_fuzzers@v1
      with:
-        language: c++ # Change this to the language you are fuzzing.
+        language: c++ 
         sanitizer: ${{ matrix.sanitizer }}
         upload-build: true
