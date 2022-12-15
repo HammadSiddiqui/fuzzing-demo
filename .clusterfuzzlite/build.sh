@@ -15,10 +15,10 @@
 
 
 $CXX $CXXFLAGS -std=c++11 -Ilib/ \
-    ./fuzzer.cpp -o $OUT/fuzzer.o \
+    ./fuzzer.cpp -o $OUT \
     $LIB_FUZZING_ENGINE 
 
-./fuzzer
+./a.out
 
 
 #clang++ ./fuzzy.cpp -std=c++14 -g -fsanitize=fuzzer,address 
