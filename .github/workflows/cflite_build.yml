@@ -14,9 +14,9 @@ jobs:
      fail-fast: false
      matrix:
         sanitizer:
-        #- address
+        - address
         # Override this with the sanitizers you want.
-         - undefined
+        # - undefined
         # - memory
    steps:
    - name: Build Fuzzers (${{ matrix.sanitizer }})
