@@ -8,11 +8,17 @@
 
 # build fuzzers
 # e.g.
-$CXX $CXXFLAGS -std=c++11 -Iinclude \
-    ./fuzzer.cpp \
+# $CXX $CXXFLAGS -std=c++11 -Iinclude \
+#     ./fuzzer.cpp -o $OUT/fuzzer \
+#     $LIB_FUZZING_ENGINE 
+
+make clean
+make -j$(nproc) all
+
+$CXX $CXXFLAGS -std=c++11 -Ilib/ \
+    $SRC/fuzzer.cpp -o $OUT \
     $LIB_FUZZING_ENGINE 
 
-./a.out
 
 
 #clang++ ./fuzzy.cpp -std=c++14 -g -fsanitize=fuzzer,address 
