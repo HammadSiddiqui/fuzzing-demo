@@ -13,9 +13,9 @@ size_t find_newline(const char *str)
 
         ++location;
 
-        if (location == sizeof(str)) { //becoming memory safe by cutting off loop at the end of string
-          return 1;
-        }
+        // if (location == sizeof(str)) { //becoming memory safe by cutting off loop at the end of string
+        //   return 1;
+        // }
     }
   
 
