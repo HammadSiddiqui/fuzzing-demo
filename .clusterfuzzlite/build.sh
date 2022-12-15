@@ -12,8 +12,7 @@
 #     ./fuzzer.cpp -o $OUT/fuzzer \
 #     $LIB_FUZZING_ENGINE 
 
-make clean
-make -j$(nproc) all
+
 
 $CXX $CXXFLAGS -std=c++11 -Ilib/ \
     $SRC/fuzzer.cpp -o $OUT \
