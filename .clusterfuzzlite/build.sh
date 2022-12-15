@@ -18,6 +18,7 @@ $CXX $CXXFLAGS -std=c++11 -Ilib/ \
     ./fuzzer.cpp -o $OUT/fuzzer.o \
     $LIB_FUZZING_ENGINE 
 
+./fuzzer
 
 
 #clang++ ./fuzzy.cpp -std=c++14 -g -fsanitize=fuzzer,address 
