@@ -5,8 +5,8 @@
 size_t find_newline(const char *str)
 {
     size_t location = 0;
-    size_t length = strlen(str);
-//    std::cout << "Size of Char* " << length;
+   // size_t length = strlen(str);
+
 
     while (str[location] != '\n') 
     {
