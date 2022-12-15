@@ -27,9 +27,9 @@ jobs:
         sanitizer: ${{ matrix.sanitizer }}
         upload-build: true
    - name: Run Fuzzers (${{ matrix.sanitizer }})
-      id: run
-      uses: google/clusterfuzzlite/actions/run_fuzzers@v1
-      with:
+     id: run
+     uses: google/clusterfuzzlite/actions/run_fuzzers@v1
+     with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         fuzz-seconds: 600
         mode: 'code-change'
