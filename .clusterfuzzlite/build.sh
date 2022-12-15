@@ -15,7 +15,7 @@
 
 
 $CXX $CXXFLAGS -std=c++11 -Ilib/ \
-    ./fuzzer.cpp -o $OUT \
+    ./fuzzer.cpp -o $OUT/fuzzer.o \
     $LIB_FUZZING_ENGINE 
 
 
